@@ -236,8 +236,7 @@ body {
   justify-content: center;
   background: #f5f4fa;
   border-radius: 4px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 120px;
   margin-bottom: 30px;
 }
 .feature-logo-icon {
@@ -344,12 +343,12 @@ body {
 .icon-client-link {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .icon-client-link:hover,
 .icon-client-link:focus {
@@ -362,20 +361,21 @@ body {
 
 .icon-client {
   fill: #afb1b8;
+  width: 106px;
+  height: 60px;
 }
 /* =========== end regular clients =========== */
 
 /* =========== footer =========== */
 .footer {
   background: #2f303a;
-  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-conteiner {
   display: flex;
 }
 .footer-contact-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 70px;
 }
 .footer-logo {
@@ -418,20 +418,20 @@ body {
   font-style: normal;
 }
 .social-links {
-  inset-block: ;
   vertical-align: baseline;
   width: 206px;
+  box-sizing: border-box;
 }
 .social-links-title {
-  align-items: flex-start;
+  display: block;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.42px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 72px;
   margin-bottom: 20px;
+  padding-top: 12px;
 }
 .social-list-footer {
   display: flex;
@@ -441,6 +441,11 @@ body {
 }
 .social-list-link {
   background: rgba(255, 255, 255, 0.1);
+}
+.social-list-icon-footer {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 /* =========== end footer =========== */
 
@@ -475,6 +480,9 @@ body {
 .nav-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* =========== end navigation =========== */
 .our-works {
@@ -488,6 +496,12 @@ body {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
+
+.our-work:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .our-work {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
